@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="test group 1">
+		<classes>
+		<!-- package.classname -->
+			<class name="test.SampleTestNG" />
+			<class name="test.SampleTestNG2">
+			<methods>
+			<include name ="test1" />
+			</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test group 2">
+		<classes>
+			<class name="test.SampleTestNG3">
+				<methods>
+					<exclude name="test2" />
+				</methods>
+				</class>
+		</classes>
+
+	</test>
+	<test name="test group 3">
+		<classes>
+			<class name="test.SampleTestNG4">
+				<methods>
+					<exclude name="tes.*" />
+				</methods>
+				</class>
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->
