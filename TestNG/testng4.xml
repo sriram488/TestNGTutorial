@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel ="tests" thread-count = "3">
+<parameter name="URL" value ="qaclickcademy.com"/>
+<listeners> 
+<listener class-name="test.Listeners"/>
+</listeners>
+	<test name="test group 1">
+		<classes>
+			<class name="test.SampleTestNG"/>
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->

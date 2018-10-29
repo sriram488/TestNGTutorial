@@ -10,7 +10,7 @@ public class SampleTestNG2 {
 		System.out.println("test 1 runs");
 	}
 
-	@Test
+	@Test(groups={"smoke"})
 	public void test2()
 	{
 		System.out.println("test 2 runs");
